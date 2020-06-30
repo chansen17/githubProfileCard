@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #fffaf5;
+}
+
+.form {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+}
+
+.form input {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #2E2E2E;
+  font-size: 1.15em;
+  padding: .25rem;
+  width: 100%;
+}
+
+.form button {
+  width: 100%;
+  border: none;
+  background: #2E2E2E;
+  color: #ccc;
+  padding: .5rem 1rem;
+}
+
+.card {
+  background: #FFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  filter: drop-shadow(5px 10px 20px #ccc);
+  -webkit-filter: drop-shadow(5px 10px 20px #ccc);
+  -moz-filter: drop-shadow(5px 10px 20px #ccc);
+  -o-filter: drop-shadow(5px 10px 20px #ccc);
+  min-height: 375px;
+  height: auto;
+  width: 700px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fa-circle {
+  font-size: 5px;
+}
+
+.card header {
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgb(222, 222, 222);
+}
+
+.card .profile-img-container {  
+  display: flex;
+}
+
+.card .profile-img-container .title-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.card .profile-img-container .title-info div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card .profile-img-container .title-info div:nth-child(1) {
+  align-items: flex-start;
+}
+
+.card .profile-img-container .title-info div:nth-child(2) {
+  align-items: flex-end;
+  line-height: 1.5;
+}
+
+.card .profile-img-container .title-info .name {
+  color: #2E2E2E;
+  text-transform: capitalize;
+  font-size: 1.5em;
+}
+
+.card .profile-img-container .title-info .login {
+  color: #888888;
+}
+
+.card .profile-img-container .title-info .company {
+  color: #888888;
+}
+
+.card .profile-img-container .title-info .location {
+  color: #888888;
+
+}
+
+.card .prof-img {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-new-user-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-btn {
+  padding: .80em 1.5em;
+  border: none;
+  outline: none;
+  background: #2E2E2E;
+  color: #ccc;
+  text-transform: capitalize;
+  font-weight: 700;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: .2s all;
+}
+
+.edit-btn:hover {
+  color: #eee;
+}
+
+.body .nav {
+  margin-top: .5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.body div ul {
+  list-style: none;
+  display: flex; 
+  flex-direction: row;
+}
+
+.body div ul li {
+  margin: .5em;
+  text-transform: capitalize;
+  color: #ababab;
+  font-size: .90em;
+  font-weight: 500;
+  transition: .2s all;
+}
+
+.body div ul li:hover {
+  color: #2E2E2E;
+  cursor: pointer;
+}
+
+.body div ul li:nth-child(1) {
+  color: #2E2E2E;
+}
+
+.body .insights {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25em 0;
+}
+
+.meta-information .panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding-bottom: 2rem;
+}
+
+.meta-information .panels .panel {
+  color: #ccc;
+  padding: .5rem;
+  border-radius: 7px;
+  min-height: 80px;
+  filter: drop-shadow(5px 5px 7px rgb(91, 91, 91));
+  -webkit-filter: drop-shadow(5px 7px 10px rgb(91, 91, 91));
+  -moz-filter: drop-shadow(5px 7px 10px rgb(91, 91, 91));
+  -o-filter: drop-shadow(5px 7px 10px rgb(91, 91, 91));
+  cursor: pointer;
+}
+
+.meta-information .panels .panel h5 {
+  margin-top: 5px;
+  color: #2E2E2E;
+}
+
+.meta-information .panels .panel .stat {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: .7em 0;
+}
+
+/* .meta-information .panels .panel:nth-child(1)  {
+  background: #2E2E2E;
+} */
+
+.panel-style-selected {
+  background: rgb(17, 15, 15);
+}
+
+.panel-style-not-selected {
+  background: transparent;
+}
+
+.panels .panel .inner-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.panels .panel .inner-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panels .panel .inner-bottom .more-info-link {
+  color: #777;
+  text-decoration: none;
+  font-size: .70em;
+}
+
+.panels .panel .inner-top .percent-change small {
+  color: rgb(50, 179, 50);
+}
+
+.attribute {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: rgb(220, 220, 220);
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: -2px;
+}
